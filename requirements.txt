@@ -1,0 +1,78 @@
+# FastAPI and Web Framework
+fastapi
+uvicorn[standard]
+gunicorn
+
+# Core Dependencies
+python-dotenv
+requests
+httpx
+typing-extensions>=4.12.0
+
+# Data Handling
+pandas
+simplejson
+
+# Database
+sqlalchemy
+alembic
+psycopg2-binary
+psycopg[pool]
+asyncpg
+
+# LLM & AI
+openai
+pydantic>=2.0.0
+pydantic-ai
+tiktoken
+tenacity
+transformers
+logfire
+
+# Caching
+redis
+aiocache
+
+# Authentication
+PyJWT
+cryptography
+
+# Utils
+langcodes
+language-data
+openpyxl
+jinja2
+asgiref
+
+# Vector DB
+marqo
+cosdata-client>=0.2.2
+sentence-transformers>=2.2.0
+
+# AWS
+boto3
+
+# Audio & VAD
+soundfile
+torch  # Unpinned to avoid resolution hangs
+torchaudio
+pipecat-ai[silero,rnnoise]
+onnxruntime
+pyrnnoise
+
+# Geocoding
+geopy
+rapidfuzz
+convertdate
+
+# Other dependencies
+wait_for2
+aiofiles
+pyloudnorm
+resampy
+numba
+llvmlite
+sympy
+scipy
+click
+charset-normalizer
