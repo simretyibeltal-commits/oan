@@ -21,7 +21,7 @@ RUN pip install --upgrade pip setuptools wheel
 COPY requirements.txt .
 
 # Install Python dependencies
-RUN pip install --no-cache-dir --prefer-binary -r requirements.txt || true
+RUN pip install --no-cache-dir --prefer-binary -r requirements.txt
 
 # Download NLTK data
 RUN python3 -c "import nltk; nltk.download('punkt'); nltk.download('punkt_tab')"
