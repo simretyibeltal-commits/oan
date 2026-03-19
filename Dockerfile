@@ -4,7 +4,7 @@ FROM python:3.10-slim
 # Set work directory
 WORKDIR /app
 
-# Install system dependencies (FIXED: added make + cmake)
+# Install system dependencies
 RUN apt-get update && apt-get install -y \
     supervisor \
     gcc \
@@ -15,9 +15,6 @@ RUN apt-get update && apt-get install -y \
     curl \
     netcat-openbsd \
     && rm -rf /var/lib/apt/lists/*
-
-# Upgrade pip (recommended for builds like kenlm)
-RUN pip install --upgrade pip setuptools wheel
 
 # Copy requirements first for better Docker layer caching
 COPY requirements.txt .
