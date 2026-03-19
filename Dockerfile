@@ -16,6 +16,7 @@ RUN apt-get update && apt-get install -y \
     netcat-openbsd \
     && rm -rf /var/lib/apt/lists/*
 
+RUN pip install --upgrade pip setuptools wheel
 # Copy requirements first for better Docker layer caching
 COPY requirements.txt .
 
